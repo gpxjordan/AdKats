@@ -41356,11 +41356,8 @@ namespace PRoConEvents
         {
             try
             {
-                // Temporary patch for FPSG's memory issues
-                if (!manual && _serverInfo.ServerName.ToUpper().Contains("FPSG"))
-                {
-                    return;
-                }
+                // Temporary patch for testing
+                return;
                 if ((_pluginVersionStatus == VersionStatus.OutdatedBuild && !_automaticUpdatesDisabled && !_pluginUpdatePatched) || 
                     _pluginVersionStatus == VersionStatus.TestBuild || 
                     (!String.IsNullOrEmpty(_AdKatsLRTExtensionToken)) || 
